@@ -1,18 +1,27 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/" title="Back to home page">
+          <NavLink
+            exact
+            activeClassName="highlight"
+            to="/"
+            title="Back to home page"
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" title="Contact form">
+          <NavLink
+            activeClassName="highlight"
+            to="/contact"
+            title="Contact form"
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
