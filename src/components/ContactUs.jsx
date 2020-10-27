@@ -1,7 +1,7 @@
-function Contact() {
+function ContactUs() {
   return (
     <form>
-      <h3>Contact</h3>
+      <h3>Contact Us</h3>
       <label htmlFor="name">
         Name
         <input id="name" type="text" />
@@ -10,4 +10,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactUs;
